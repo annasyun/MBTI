@@ -10,6 +10,8 @@ body {
   background: #f7f1c0;
 }
 
+/* home */
+
 .sec-home {
   position: absolute;
   left: 50%;
@@ -59,4 +61,15 @@ body {
   font-size: 16px;
   font-weight: 900;
   line-height: 23px;
+}
+
+/* test */
+
+.sec-test {
+  display: flex;
+  flex-direction: column;
+}
+
+.btn-prev {
+  float: left;
 }
