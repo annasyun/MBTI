@@ -25,6 +25,7 @@ fetch("../src/datas/result.json")
     subtitle.innerHTML = resultData[0].title;
     title.innerHTML = resultData[0].name;
     img.src = `src${resultData[0].img}`;
+    desc.innerHTML = resultData[0].name;
 
     resultData[0].features.map((v) => {
       const feature = document.createElement("li");

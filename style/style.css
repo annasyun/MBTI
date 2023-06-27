@@ -73,3 +73,76 @@ body {
 .btn-prev {
   float: left;
 }
+
+/* result */
+
+.sec-result {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.img-developertype {
+  width: 270px;
+  height: 267px;
+  margin-bottom: 36px;
+}
+
+.subtitle-developertype {
+  font-size: 14px;
+  margin-bottom: 1.5rem;
+}
+
+.title-developertype {
+  font-size: 36px;
+  font-weight: bold;
+  color: #9b51e0;
+}
+
+.sec-result p,
+.txt-desc-developertype {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.sec-result p {
+  border-top: 2px solid #9b51e0;
+  border-bottom: 2px solid #9b51e0;
+  padding: 1rem 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.list-features {
+  width: 300px;
+  margin-bottom: 1.5rem;
+}
+
+.list-features li::before {
+  content: "\2022";
+  color: #9b51e0;
+  font-weight: 900;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+.list-features li {
+  margin-bottom: 1rem;
+  line-height: 1.2rem;
+}
+
+.btn-retest {
+  width: 100%;
+  background-color: #ffffff;
+  color: #9b51e0;
+  font-weight: 900;
+  font-size: 16px;
+  border: none;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.5);
+  height: 52px;
+  border-radius: 10px;
+}
