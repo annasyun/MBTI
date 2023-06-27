@@ -7,14 +7,37 @@ if (maxDeveloperType) {
 } else {
   console.log("maxDeveloperType 값이 존재하지 않습니다.");
 }
+
 let resultData = "";
+const subtitle = document.querySelector(".subtitle-developertype");
+const title = document.querySelector(".title-developertype");
+const img = document.querySelector(".img-developertype");
+const desc = document.querySelector(".txt-desc-developertype");
+const ul = document.querySelector(".list-features");
+const btnTest = document.querySelector(".btn-retest");
 
 fetch("../src/datas/result.json")
   .then((response) => response.json())
   .then((data) => {
-    resultData = data;
-    console.log(data);
+    resultData = data.filter((v) => {
+      return v.name === maxDeveloperType;
+    });
+    subtitle.innerHTML = resultData[0].title;
+    title.innerHTML = resultData[0].name;
+    img.src = `src${resultData[0].img}`;
+
+    resultData[0].features.map((v) => {
+      const feature = document.createElement("li");
+      feature.innerHTML = v;
+      ul.appendChild(feature);
+    });
   })
   .catch((error) => {
     console.log("Error:", error);
   });
+
+btnTest.addEventListener("click", retest);
+
+function retest() {
+  window.location.href = "./test.html";
+}
