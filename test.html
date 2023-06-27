@@ -11,43 +11,60 @@
   <body>
     <section class="sec-test">
       <div>
-        <div><span>2</span>/10</div>
+        <div><span class="num-curPage">1</span>/10</div>
         <div>
           <div></div>
         </div>
       </div>
       <div>
         <h2 class="sr-only">테스트 문항</h2>
-        <h3>Q. 여러분의 서비스가 성공하였다면, 서비스를 성공시킨 요소는?</h3>
+        <h3 class="title-question">
+          Q.
+          <span class="txt-question">당신이 가장 재밌었던 수업은?</span>
+        </h3>
         <fieldset>
           <div>
             <input type="radio" id="testChoice1" name="choice" /><label
               for="testChoice1"
-              >1. 데이터 분석을 통한 효과적인 개인 맞춤형 서비스</label
+              >1.
+              <span class="txt-answer1"
+                >게임 개발(유니티, 언리얼, Pygame)</span
+              ></label
             >
           </div>
           <div>
             <input type="radio" id="testChoice2" name="choice" /><label
               for="testChoice2"
-              >2. 화려하거나 품격있는 디자인, 흥미로운 콘텐츠 제작</label
+              >2.
+              <span class="txt-answer2"
+                >백엔드 또는 인프라(C계열-닷넷, JAVA-Spring, Python-Django,
+                Network, Ubuntu, CentOS, 부하분산, etc)</span
+              ></label
             >
           </div>
           <div>
             <input type="radio" id="testChoice3" name="choice" /><label
               for="testChoice3"
-              >3. 게임적인(Gamification) 요소 도입</label
+              >3. <span class="txt-answer3">정보보안(해킹과 방어)</span></label
             >
           </div>
           <div>
             <input type="radio" id="testChoice4" name="choice" /><label
               for="testChoice4"
-              >4. 안정적인 서비스 운용</label
+              >4.
+              <span class="txt-answer4"
+                >프론트엔드(HTML, CSS, Javascript, etc)</span
+              ></label
             >
           </div>
           <div>
             <input type="radio" id="testChoice5" name="choice" /><label
               for="testChoice5"
-              >5. 믿을 수 있는 정보 관리</label
+              >5.
+              <span class="txt-answer5">
+                데이터 분석과 인공지능(전처리, 분석, 시각화, 머신러닝,
+                딥러닝)</span
+              ></label
             >
           </div>
         </fieldset>
@@ -57,5 +74,6 @@
         <button class="btn-next">다음</button>
       </div>
     </section>
+    <script src="./js/test.js"></script>
   </body>
 </html>
