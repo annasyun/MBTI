@@ -212,6 +212,7 @@ body {
   right: 0;
   margin: auto;
 }
+
 #loader {
   width: 70px;
   height: 70px;
@@ -236,7 +237,7 @@ body {
   content: "로딩중입니다..";
   display: block;
   margin-top: 70px;
-  -webkit-animation: none; 
+  -webkit-animation: none;
   -webkit-animation: none;
   animation: none;
 }
