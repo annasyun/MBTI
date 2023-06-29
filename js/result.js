@@ -1,3 +1,13 @@
+document.onreadystatechange = function () {
+  if (document.readyState !== "complete") {
+    document.querySelector("body").style.visibility = "hidden";
+    document.querySelector("#loader").style.visibility = "visible";
+  } else {
+    document.querySelector("#loader").style.display = "none";
+    document.querySelector("body").style.visibility = "visible";
+  }
+};
+
 // localStorage에서 maxDeveloperType 값 가져오기
 const maxDeveloperType = localStorage.getItem("maxDeveloperType");
 

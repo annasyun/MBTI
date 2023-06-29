@@ -201,3 +201,34 @@ body {
   height: 52px;
   border-radius: 10px;
 }
+
+/* loading */
+
+#loader {
+  width: 70px;
+  height: 70px;
+  -webkit-animation: spin 1s linear infinite;
+  animation: spin 1s linear infinite;
+  background: no-repeat center/100% url("../src/images/Loading.png");
+}
+
+@-webkit-keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.center {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
