@@ -11,6 +11,8 @@ const answer2 = document.querySelector(".txt-answer2");
 const answer3 = document.querySelector(".txt-answer3");
 const answer4 = document.querySelector(".txt-answer4");
 const answer5 = document.querySelector(".txt-answer5");
+const progress = document.getElementById("progress");
+
 let developerTypes = [
   { name: "백엔드 개발자", count: 0 },
   { name: "프론트엔드 개발자", count: 0 },
@@ -37,6 +39,7 @@ prevBtn.addEventListener("click", function () {
   if (parseInt(curPageNum) === 1) {
     return;
   } else {
+    progress.value--;
     curPageNum--;
     curPage.innerHTML = curPageNum;
     question.innerHTML = testData.questions[parseInt(curPageNum) - 1].content;
@@ -88,6 +91,7 @@ nextBtn.addEventListener("click", function () {
       default:
         break;
     }
+    progress.value++;
 
     if (parseInt(curPageNum) !== 10) {
       curPageNum++;
