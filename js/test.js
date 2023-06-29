@@ -107,8 +107,6 @@ nextBtn.addEventListener("click", function () {
         testData.answers[parseInt(curPageNum - 1) * 5 + 3].content;
       answer5.innerHTML =
         testData.answers[parseInt(curPageNum - 1) * 5 + 4].content;
-      console.log(selectedAnswer, countIndex);
-      console.log(developerTypes);
     } else {
       // 최대값을 저장할 변수 초기화
       let maxCount = 0;
@@ -125,18 +123,8 @@ nextBtn.addEventListener("click", function () {
         }
       }
 
-      // 최대값과 해당하는 개발자 유형 출력
-      console.log("최대값:", maxCount);
-      console.log("최대값을 가진 개발자 유형:", maxDeveloperType);
-
       localStorage.setItem("maxDeveloperType", maxDeveloperType);
 
-      alert(
-        `최대값:
-        ${maxCount},
-        최대값을 가진 개발자 유형:
-        ${maxDeveloperType}`
-      );
       showResult();
     }
   } else {
